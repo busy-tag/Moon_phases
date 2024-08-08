@@ -58,7 +58,6 @@ def place_image_center(drive_letter, background_size, overlay_path, output_path,
 def add_text_to_image(drive_letter, image_path, output_path, waning_value, day_of_week, date, font_path="MontserratBlack-3zOvZ.ttf"):
     image_path = f"{drive_letter}:/{image_path}"
     output_path = f"{drive_letter}:/{output_path}"
-    font_path = f"{drive_letter}:/{font_path}"
     with Image.open(image_path) as img:
         draw = ImageDraw.Draw(img)
         
